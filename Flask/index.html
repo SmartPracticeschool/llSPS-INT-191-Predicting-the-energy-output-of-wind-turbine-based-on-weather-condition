@@ -1,0 +1,46 @@
+<html>
+<title >Predicting the Theoretical Power Curve of a Wind turbine</title>
+<head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'style/myapp31.css') }}">
+<!link rel="stylesheet" type="text/css" href="myapp23.css">
+
+</head>
+<body class="body1" > 
+<form action = "http://localhost:5000/login" method = "post">
+  <div class="container">
+    <h1 align = 'center' style="color:black; font-size:50px" >Predicting the Theoretical Power Curve of a Wind turbine</h1>
+    <p align = 'center'style="font-size:25px"><b>Please fill the following details:<b></p>
+    <form action='/age' method="post">
+	<table align='center' style='padding:15px; border-spacing: 15px; font-size:20 px'>
+	
+	
+	<tr>
+    <td><label for="LV ActivePower (kW)"><b>LV ActivePower (kW)</b></label></td>
+    <td><input type="text" placeholder="Enter Power in kW" name="a" id="rcorners1" required></td>
+	</tr>
+	
+	<tr>
+    <td><label for="Wind Speed (m/s)"><b>Wind Speed (m/s)</b></label></td>
+    <td><input type="text" placeholder="Enter Windspeed in m/s" name="b" id="rcorners1" required></td>
+	</tr>	
+	
+	
+	
+	
+	
+	<tr>
+	<td colspan="2" align="center" ><button class="button5" type="Submit" name="predict" align='center' value="Predict" onclick="window.location.href = 'F:\Projects\Abalone\templates\abalone_predict1.html'" >Predict</button></td>
+	</tr>
+	</table>
+	</form>
+	<table align="center">
+	<tr>
+	<td><label for="age" style="font-size:23px"><b></b></label></td>
+    <td style="font-size:23px"><b>{{abc}} kwh</b></td>
+	</tr>
+
+	</table>
+    
+  </div>
+
+</form>
